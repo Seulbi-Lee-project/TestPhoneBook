@@ -1,5 +1,5 @@
 package com.example.testphonebook
 
-data class PhoneBook(var profileImage:String, var name:String, var phoneNumber:String, var bookMark:Boolean=false) {
+data class PhoneBook(var aProfileImage:Int, var aName:String, var aPhoneNumber:String, var bookMark:Boolean=false) {
 
 }
