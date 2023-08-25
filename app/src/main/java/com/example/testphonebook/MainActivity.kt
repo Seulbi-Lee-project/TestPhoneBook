@@ -2,6 +2,7 @@ package com.example.testphonebook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testphonebook.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,16 +19,20 @@ class MainActivity : AppCompatActivity() {
 
         // 데이터 원본 준비
         val dataList = mutableListOf<PhoneBook>()
-        dataList.add(PhoneBook(R.drawable.sample1, "Bella", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample1, "Charlie", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample2, "Daisy", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample3, "Duke", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample4, "Max", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample5, "Happy", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample6, "Luna", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.sample7, "Bob", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Bella", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Charlie", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Daisy", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Duke", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Max", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Happy", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Luna", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Bob", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Rora", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Jim", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Jack", "010-1234-5678"))
 
-
+        binding.recyclerView.adapter = PhoneBookAdapter(dataList)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
     }
 }
