@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/profileImage"
+        android:id="@+id/fProfileImage"
         android:layout_width="60dp"
         android:layout_height="60dp"/>
     <LinearLayout
@@ -17,13 +17,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/fName"
             android:text="@string/name"
             android:textSize="@dimen/list_item_text_size1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/phoneNumber"
+            android:id="@+id/fPhoneNumber"
             android:textSize="@dimen/list_item_text_size2"
             android:text="@string/phoneNumber"
             android:layout_width="wrap_content"

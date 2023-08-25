@@ -8,6 +8,8 @@ import com.example.testphonebook.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    val NOT_FAVORITE = 0
+    val FAVORITE = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         // 데이터 원본 준비
         val dataList = mutableListOf<PhoneBook>()
         dataList.add(PhoneBook(R.drawable.profile_picture, "Bella", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.profile_picture, "Charlie", "010-1234-5678"))
-        dataList.add(PhoneBook(R.drawable.profile_picture, "Daisy", "010-1234-5678"))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Charlie", "010-1234-5678", 1))
+        dataList.add(PhoneBook(R.drawable.profile_picture, "Daisy", "010-1234-5678", 1))
         dataList.add(PhoneBook(R.drawable.profile_picture, "Duke", "010-1234-5678"))
         dataList.add(PhoneBook(R.drawable.profile_picture, "Max", "010-1234-5678"))
         dataList.add(PhoneBook(R.drawable.profile_picture, "Happy", "010-1234-5678"))
