@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Test PhoneBook</string>
+    <string name="name">Name</string>
+    <string name="phoneNumber">Phone Number</string>
 </resources>
